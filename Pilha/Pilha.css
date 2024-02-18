@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap');
+
+/* Estilos globais para o corpo da página */
+body {
+    background: linear-gradient(180deg, #131223 0%, #300453 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    scrollbar-color: #9317B5 #ccc;
+    scrollbar-width: thin;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Estilos específicos para o WebKit (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9317B5;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+/* Estilos para a pilha dentro da caixa de texto */
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para a representação visual da pilha */
+.stack {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Estilos para cada elemento da pilha */
+.stack-element {
+    border: 1px solid #9f4ece;
+    border-radius: 4px;
+    height: 23px;
+    margin: 2px;
+    padding: 5px;
+    background-color: #9f4ece;
+    color: #fff;
+}
+
+/* Estilos para a caixa de texto */
+.caixaDeTexto {
+    border: 8px solid #0D0D1A;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 525px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #311c3c;
+    flex-direction: column;
+    animation: fadeAnimation 0.5s ease-in-out;
+    overflow-y: scroll;
+    max-height: 550px;
+    scrollbar-color: #9317B5 #000000;
+    scrollbar-width: thin;
+}
+
+/* Estilos para o título do heap */
+.titulo_pilha {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-left: 10%;
+    font-size: 30px;
+    color: #8900FF;
+    margin-top: 50px;
+    padding-bottom: 0px;
+}
+
+/* Estilos para a explicação do heap */
+.explicacao {
+    color: white;
+    font-size: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 50px;
+    line-height: 1;
+    font-family: 'Nova Square', sans-serif;
+}
+
+/* Estilos para os parágrafos da explicação */
+.explicacao p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Estilos para a página */
+.page {
+    background: linear-gradient(to bottom, #131223, #300453);
+}
+
+/* Estilo para o botão de opções */
+#buttom-menu {
+    border-radius: 10%;
+    border: 2px solid;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to top, rgb(81, 3, 136), rgb(158, 34, 203));
+    color: white;
+    font-family: 'Nova Square', sans-serif;
+}
+
+#buttom-menu:hover {
+    background-image: linear-gradient(to top, rgb(81, 3, 136), rgb(43, 3, 57));
+}
+
+/* Estilos para a caixa de opções */
+.menu {
+    border-radius: 5%;
+    background-color: rgb(42, 29, 46);
+    margin-right: 67%;
+    margin-left: 30px;
+}
+
+.menu-section {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.itens-menu {
+    display: block;
+}
+
+/* Estilos para os botões de interação */
+.butaoInteracao {
+    border: 1px solid;
+    border-radius: 10%;
+    margin-bottom: 5px;
+    background-color: rgb(92, 8, 138);
+    color: white;
+    padding: 7px;
+    font-family: 'Nova Square', sans-serif;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+/* Estilo para o botão de opções */
+.botaoOpcoes {
+    border-radius: 10%;
+    border: 2px solid;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to top, rgb(81, 3, 136), rgb(158, 34, 203));
+    color: white;
+    font-family: 'Nova Square', sans-serif;
+  }
+  
+  /* Estilo para o botão de opções quando ativo */
+  .botaoOpcoes.ativo {
+    background-color: white;
+    color: black;
+  }
